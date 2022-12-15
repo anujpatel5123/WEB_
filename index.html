@@ -1,0 +1,318 @@
+<!-- Name - Anuj Patel
+Student ID - 165811217
+Student Mail - apatel521@myseneca.ca -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link
+      rel="icon"
+      href="https://www.clipartmax.com/png/middle/308-3085881_man-resume-document-employee-shortlisted-portfolio-website-visitor-icon.png"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navigation.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/education.css">
+    <link rel="stylesheet" href="./css/skills.css">
+    <link rel="stylesheet" href="./css/skill.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kimeiga/bahunya/dist/bahunya.min.css">
+    <title>My Porfolio</title>
+</head>
+<body>
+   <header class="navbar">
+        <div class="user">
+          <h2></h2>
+        </div>
+        
+          <ul>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+          </ul>
+        
+        <a
+          href="#"
+          class="download-btn"
+          onclick="downloadCV()"
+        >
+          Download CV <i class="fa-solid fa-download"></i>
+        </a>
+    </header>
+  
+
+    <div class="home">
+        <div class="userImageBlock">
+            <img
+              src="./assets/images/img.jpeg"
+              width="200px"
+              height="200px"
+              class="image"
+            />
+        </div>
+        <div class="userContent">
+            <h3>Hi There!</h3>
+            <h1>I Am <span>ANUJ</span></h1>
+            <p>FUTURE WEB DEVELOPER!!!</p>
+            <a href="#about"><button class="about-btn">About Me <i class="fa-solid fa-user"></i></button></a>
+        </div>
+  
+    </div>
+
+    
+    <div id="about" class="aboutMeDiv">
+      <h3 class="title">About Me and Acedemic Honesty</h3>
+      <hr class="hr" />
+      <div class="aboutMeContent">
+        <div class="aboutMeTable">
+            <table class="styled-table">
+                <tbody>
+                    <tr>
+                        <td><b>AGE:</td>
+                        <td class="aboutDetails">19</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td><b>EMAIL:</td>
+                        <td class="aboutDetails">apatel521@myseneca.ca</td>
+                    </tr>
+                    
+                    
+                    <tr class="active-row">
+                        <td><b>LANGUAGES:</td>
+                        <td class="aboutDetails">English, Hindi, Gujarati</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td><b>CLASS SECTION:</td>
+                        <td class="aboutDetails">NII</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td><b>STUDENT ID:</td>
+                        <td class="aboutDetails">165811217</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td><b>Hobbies:</td>
+                        <td class="aboutDetails">Coding, Playing Online Multiplayeer Games, Scrolling Insagram</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td><b>INSTRUCTOR:</td>
+                        <td class="aboutDetails">Robin li</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+      </div>
+    </div>
+
+    <div class="aboutMeText">
+    <b>Hey there! I'm Anuj, let me introduce my"self". I am from India and an international stuent here in Canada persuing diploma in Computer Programming(CPP). I have future ambition to become a full time front end developer.</b>
+      <hr>
+      I Declare That My Assessment Is Wholly My Own Work In Accordance With Seneca Academic Policy. No Part Of This Assessment Has Been Copied Manually Or Electronically From Any Other Source (Including Web Sites) Except For The Information Supplied By The WEB222 Instructors And / Or Made Available In This Assessment For My Use. I Also Declare That No Part Of This Assignment Has Been Distributed To Other Students.
+      
+      
+    </div>
+   
+    <div id="education" class="education-container">
+      <h3 class="title">Education</h3>
+      <hr class="hr" />
+      <div class="years-div">
+        <div id="2019" class="circle-div selected" onclick="handleEducationChange(event)">
+          2019
+        </div>
+        <i class="fa-solid fa-greater-than"></i>
+        <div id="2020" class="circle-div" onclick="handleEducationChange(event)">
+          2020
+        </div>
+        <i class="fa-solid fa-greater-than"></i>
+        <div id="2023" class="circle-div" onclick="handleEducationChange(event)">
+          2023
+        </div>
+      </div>
+
+      <div class="education-detail">
+        <div class="education-image-container">
+          
+        </div>
+        <div class="education-description">
+            <span class="edu-title">10th Grade</span>
+            <span class="edu-name">C. I. PATEL HIGHER SECONDARY SCHOOL, KALOL</span>
+            <span class="edu-desc">I passed my secondary education in 2019 with 3.9 GPA.</span>
+        </div>
+      </div>
+    </div>
+    
+
+    <div id="skills" class="skillsDiv">
+      <h3 class="title">My programming Skills</h3>
+      <hr class="hr" />
+      <div class="boxesDiv">
+        <div class="box">
+          <div class="text-center">
+            <img src="./assets/images/skillsImages/html.png" class="skillImage" alt="skill Images" />
+            <h3 class="skillTitle">HTML</h3>
+            <p class="skillDesc"></p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="text-center">
+            <img src="./assets/images/skillsImages/js.png" class="skillImage" alt="skill Images" />
+            <h3 class="skillTitle">Javascript</h3>
+            <p class="skillDesc"></p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="text-center">
+            <img src="./assets/images/skillsImages/java.png" class="skillImage" alt="skill Images" />
+            <h3 class="skillTitle">Java</h3>
+            <p class="skillDesc"></p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="text-center">
+            <img src="./assets/images/skillsImages/c.png" class="skillImage" alt="skill Images" />
+            <h3 class="skillTitle">C</h3>
+            <p class="skillDesc"></p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="text-center">
+            <img src="./assets/images/skillsImages/cpp.png" class="skillImage" alt="skill Images" />
+            <h3 class="skillTitle">C++</h3>
+            <p class="skillDesc"></p>
+          </div>
+        </div>
+    </div>
+
+    
+    <div id="contact" class="contact-container">
+      <h3 class="title">Contact Me</h3>
+      <hr class="hr" />
+      <form id="form" class="form-container" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="*Enter your name"
+              name="personName"
+              class="textbox"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="*Enter your email"
+              name="personEmail"
+              class="textbox"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="number">Contact Number:</label>
+            <input
+              type="text"
+              id="number"
+              placeholder="*Enter your contact number"
+              name="personContactNumber"
+              class="textbox"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="address">Address:</label>
+              <textarea
+              id="address"
+              rows="6"
+              placeholder="Enter your address"
+              name="personAddress" required
+              class="textarea"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="city">City:</label>
+            <input
+              type="text"
+              id="city"
+              list="cities"
+              placeholder="*Enter your city"
+              name="personCity"
+              class="textbox"
+              required
+            />
+            <datalist id="cities">
+              <option value="Toronto">
+              <option value="Montreal">
+              <option value="Calgary">
+              <option value="Ottawa">
+              <option value="Vancouver">
+              <option value="Oshawa">
+            </datalist>
+          </div>
+          <div class="form-group">
+            <label for="code">Postal Code:</label>
+            <input
+              type="text"
+              id="code"
+              placeholder="*Enter your postal code"
+              name="personPostalCode"
+              class="textbox"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="question"><input type="radio" id="question" name="inquiryType"
+                    value="Question" onchange="handleInquiryTypeChange(value)" required> Question</label>
+            <label for="hiring"><input type="radio" id="hiring" name="inquiryType" value="Hiring" onchange="handleInquiryTypeChange(value)">
+                Hiring</label>
+            <label for="comment"><input type="radio" id="comment" name="inquiryType" value="Comment" onchange="handleInquiryTypeChange(value)">
+                Comment</label>
+          </div>
+          <div class="form-group hourlyRate">
+            <label for="rate">Hourly Rate:</label>
+            <input
+              type="number"
+              id="rate"
+              placeholder="*Enter hourly rate"
+              name="hourlyRate"
+              class="textbox"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+              <textarea
+              id="message"
+              rows="6"
+              placeholder="Enter your message"
+              name="personMessage" required
+              class="textarea"></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="submitBtn">Submit<i class="fas fa-paper-plane"></i></button>
+          </div>  
+      </form>
+    </div>
+   
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
