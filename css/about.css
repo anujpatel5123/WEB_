@@ -1,0 +1,46 @@
+
+ /* Name - Anuj Patel
+Student ID - 165811217
+Student Mail - apatel521@myseneca.ca  */
+
+.aboutMeDiv {
+    margin: 40px 40px;
+}
+
+.aboutMeContent {
+    display: flex;
+    margin-top: 20px;
+}
+
+.aboutMeTable {
+    flex: 6;
+    font-size: 16px;
+    color: #972323;
+    font-weight: 500;
+}
+
+.styled-table th, .styled-table td{
+    padding: 14px 20px;
+}
+
+.aboutDetails {
+    color: #972323;
+}
+
+.aboutMeText {
+    flex: 4;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #972323;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 0px) {
+    .aboutMeDiv {
+        margin: 40px 20px;
+    }
+    
+    .aboutMeContent {
+        flex-direction:column;
+}
+}
